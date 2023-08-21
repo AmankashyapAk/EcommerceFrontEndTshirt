@@ -44,3 +44,36 @@ margin-bottom: 0.25rem;
   display: flex;
 justify-content: center;
 }
+.payment-mobile{
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+   .mobile-home{
+    display: flex;
+    flex-direction: column;
+   }
+   .mobile-card{
+    width: 100%;
+   }
+   .row{
+    padding-right: 0;
+   }
+   .payment-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .col-6{
+    flex: 1 1 auto;
+   }
+   .btn-mob{
+    width: 100%;
+   }
+   .mob-6{
+    width: 100%;
+   }
+}
+

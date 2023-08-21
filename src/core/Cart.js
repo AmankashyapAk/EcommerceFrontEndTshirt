@@ -42,15 +42,15 @@ const Cart = () => {
 
   return (
     <Base title="Cart" description="Ready to checkout">
-      <div className="row text-center">
-        <div className="col-6">
-          {products.length > 0 ? (
+      <div className="row text-center payment-mobile">
+        <div className="col-6 mob-6">
+          {products && products.length > 0 ? (
             loadAllProducts(products)
           ) : (
             <h3>No Products</h3>
           )}
         </div>
-        <div className="col-6">
+        <div className="col-6 mob-6">
           <Paymentb products={products} setReload={setReload} reload={reload} />
         </div>
       </div>
